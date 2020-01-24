@@ -1,0 +1,33 @@
+{
+    "name": "mkari/dhl",
+
+    "version": "1.0",
+
+    "type": "library",    
+
+    "description": "integration with DHL web services.",
+
+    "keywords": ["dhl", "api", "shipping", "tracking", "DHL invoice"
+    ],
+
+    "require": {
+        "php": ">=5.3.0"
+    },
+
+    "license": "LGPL-2.1",
+
+	"autoload": {
+        "classmap" : [ "DHL" ]
+	},
+
+	"authors": [
+        {
+            "name": "Mustafa Kari",
+            "email": "mustafakari@gmail.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+        }
+    }
+}
