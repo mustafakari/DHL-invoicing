@@ -127,7 +127,7 @@ class ExportLineItem extends Base
             'type' => 'string',
             'required' => false,
             'subobject' => false,
-        ),        
+        ),
         'ManufactureCountryName' => array(
             'type' => 'string',
             'required' => false,

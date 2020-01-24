@@ -83,10 +83,13 @@ class Web
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt($ch, CURLOPT_PORT , 443);
-        //save DHL XML request
-        Storage::put('dhl-request-'.date('H:i:s D').'.xml', $request->toXML() );
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $request->toXML());
+
+        $str = $request->toXML();
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $str);
         $result = curl_exec($ch);
+
+        //save dhl request
+        Storage::put('request-'.date('H:i:s D').'.xml', $str);
 
         if (curl_error($ch))
         {

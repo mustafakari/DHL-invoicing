@@ -80,14 +80,6 @@ class ExportDeclaration extends Base
             'comment' => 'Export reason',
             'length' => '1',
         ),
-        'ExportReasonCode' => array(
-            'type' => 'ExportReasonCode',
-            'required' => false,
-            'subobject' => false,
-            'comment' => 'Export reason code (P:Permanent, T:Temporary, R:Re-Export)',
-            'length' => '1',
-            'enumeration' => 'P,T,R',
-        ),
         'SedNumber' => array(
             'type' => 'SEDNumber',
             'required' => false,
@@ -108,13 +100,6 @@ class ExportDeclaration extends Base
             'required' => false,
             'subobject' => false,
         ),
-        'ExportLineItems' => array(
-            'type' => 'ExportLineItem',
-            'required' => false,
-            'subobject' => true,
-            'multivalues' => true,
-            'disableParentNode' => true,
-        ),
         'InvoiceNumber' => array(
             'type' => 'string',
             'required' => false,
@@ -124,6 +109,36 @@ class ExportDeclaration extends Base
             'type' => 'string',
             'required' => false,
             'subobject' => false
+        ),
+        'AddDeclText1' => array(
+            'type' => 'string',
+            'required' => false,
+            'subobject' => false
+        ),
+        'AddDeclText3' => array(
+            'type' => 'string',
+            'required' => false,
+            'subobject' => false
+        ),
+        'ExportLineItems' => array(
+            'type' => 'ExportLineItem',
+            'required' => false,
+            'subobject' => true,
+            'multivalues' => true,
+            'disableParentNode' => true,
+        ),
+        'ExportReasonCode' => array(
+            'type' => 'ExportReasonCode',
+            'required' => false,
+            'subobject' => false,
+            'comment' => 'Export reason code (P:Permanent, T:Temporary, R:Re-Export)',
+            'length' => '1',
+            'enumeration' => 'P,T,R',
+        ),
+        'ManufactureCountryName' => array(
+            'type' => 'ManufactureCountryName',
+            'required' => false,
+            'subobject' => false,
         ),
     );
 }
