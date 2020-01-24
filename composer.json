@@ -1,7 +1,7 @@
 {
     "name": "mkari/dhl",
 
-    "version": "2.2",
+    "version": "1.0",
 
     "type": "library",    
 
@@ -28,7 +28,6 @@
     ],
     "extra": {
         "branch-alias": {
-            "2.2.x-dev": "2.2"
         }
     }
 }
