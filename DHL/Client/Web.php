@@ -88,8 +88,10 @@ class Web
         curl_setopt($ch, CURLOPT_POSTFIELDS, $str);
         $result = curl_exec($ch);
 
-        //save dhl request
-        Storage::put('request-'.date('H:i:s D').'.xml', $str);
+        //dump xml request
+        if (config('shipping.dumpRequest')) {
+            Storage::put('request-DHL'.date('H:i:s D').'.xml', $str);
+        }
 
         if (curl_error($ch))
         {
