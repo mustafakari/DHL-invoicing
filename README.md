@@ -3,11 +3,12 @@
 ## About this version 
 
 ±905314002490
+
 Mustafa M.KARI 
 
-this package initially forked on 22/1/2020  to add DHL invoicing xml tags
+DHL/API package forked on 22/1/2020  to add custom DHL invoicing featues
 
 
-## Install 
+## Install using php composer:
 composer require mkari/dhl
 
