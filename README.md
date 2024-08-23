@@ -9,6 +9,9 @@ Mustafa M.KARI
 DHL/API package forked on 22/1/2020  to add custom DHL invoicing featues
 
 
-## Install using php composer:
+## to Install this:
 composer require mkari/dhl
+
+
+https://youtu.be/6Ofohz8xCAE
 
